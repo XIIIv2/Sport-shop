@@ -48,7 +48,7 @@ public class Main {
 
             getOutput(order1);
             getOutput(order2);
-        } catch (IncompleteAssemblyException e) {
+        } catch (IncompleteAssemblyException | IllegalArgumentException e) {
             getOutput(e.getMessage());
         }
     }
