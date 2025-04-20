@@ -11,10 +11,11 @@ import icu.xiii.clothes.TShirt;
 public class Main {
 
     public static void main(String[] args) {
-        Brand activeSports = new Brand("Active sports");
-        Brand smartCaps = new Brand("Smart caps");
 
         try {
+            Brand activeSports = new Brand("Active sports");
+            Brand smartCaps = new Brand("Smart caps");
+
             TShirt redTShirt = new TShirtBuilder()
                     .paintItRed()
                     .brand(activeSports)
